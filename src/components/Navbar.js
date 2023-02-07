@@ -10,7 +10,7 @@ export default function Navbar(props) {
                 <div className="d-flex align-items-center">
                     <a className="navbar-brand" href="/">{props.title}</a>
                     <a className="navbar-brand new-page-a " href="/">Home</a>
-                    <a className="navbar-brand new-page-a " href="/about">{props.aboutText}</a>
+                    {/* <a className="navbar-brand new-page-a " href="/about">{props.aboutText}</a> */}
                 </div>
                 {/* <form className="d-flex" role="search">
                     <input className="form-control me-2 " type="search" placeholder="Search" aria-label="Search" />
