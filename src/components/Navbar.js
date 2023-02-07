@@ -1,16 +1,16 @@
 import React from "react";
 import '../components/Navbar.css';
 import PropTypes from 'prop-types';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 export default function Navbar(props) {
     return (
         <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
             <div className="container-fluid">
                 <div className="d-flex align-items-center">
-                    <Link className="navbar-brand" to="/">{props.title}</Link>
-                    <Link className="navbar-brand new-page-link " to="/">Home</Link>
-                    <Link className="navbar-brand new-page-link " to="/about">{props.aboutText}</Link>
+                    <a className="navbar-brand" href="/">{props.title}</a>
+                    <a className="navbar-brand new-page-a " href="/">Home</a>
+                    <a className="navbar-brand new-page-a " href="/about">{props.aboutText}</a>
                 </div>
                 {/* <form className="d-flex" role="search">
                     <input className="form-control me-2 " type="search" placeholder="Search" aria-label="Search" />
