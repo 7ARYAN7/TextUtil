@@ -48,7 +48,7 @@ function App() {
         <Alert alert={alert} />
         <div className="container">
           <Routes>
-            <Route path="/about" element={<About />} />
+            <Route path="/about" element={<About mode={mode}/>} />
             <Route path="/" element={<TextForm setAlertMessageAndType={setAlertMessageAndType} heading="Enter the Text To Analyze" mode={mode} />} />
             {/* <Route path="*" element={<NotF} /> */}
           </Routes>
